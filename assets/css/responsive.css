@@ -1,0 +1,544 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .pizza-nav-menu .navbar-default li {
+        padding: 5px 22px;
+    }
+    .single-block-botton li {
+        padding: 4px 4px;
+        margin: 2px;
+    }
+    .single-slide h1 {
+        font-size: 80px;
+    }
+}
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pizza-nav-menu .navbar-default li a {
+        font-size: 15px;
+    }
+    .pizza-nav-menu .navbar-default li {
+        padding: 5px 10px;
+    }
+    .header-silder-area, .single-slide, .slider-content, .slider-content img {
+        height: auto;
+    }
+    .single-slide .col-md-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .single-slide h1 {
+        font-size: 50px;
+        margin: 0 0 30px;
+    }
+    .single-slide h2 {
+        font-size: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .slider-content-meta {
+        margin-top: 60px;
+    }
+    .slider-meta-left {
+        font-size: 140px;
+        line-height: 140px;
+    }
+    .header-silder-area .owl-controls .owl-nav div {
+        left: 5%;
+    }
+    .header-silder-area .owl-controls .owl-nav .owl-next {
+        right: 5%;
+    }
+    .snigle-header-top-block {
+        margin-top: 10px;
+    }
+    .single-footer-wid {
+        padding-bottom: 20px;
+    }
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .pizza-item-modal-window .modal-dialog {
+        width: 85% !important;
+    }
+    .checkout-page-tab-nav .nav-tabs li a {
+        padding: 19px 30px;
+        font-size: 18px;
+    }
+    .tab-pizza-img {
+        width: 100px;
+        margin-bottom: 5px;
+    }
+    .item-name-list-bar h3,
+    .item-display-table h3 {
+        font-size: 16px;
+    }
+    .tab-item-img.tab-padding-mins {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .tab-item-meta h4 {
+        font-size: 15px;
+    }
+    .pizza-jq-input .btn {
+        padding: 3px 6px;
+        border: 1px solid transparent;
+        color: #fff;
+    }
+    .single-block-su-select {
+        width: 31%;
+    }
+    .check-box-title.delivery-order-page,
+    .equipment-order-contnet p {
+        line-height: 30px;
+    }
+    .total-order-amount h2 {
+        padding: 15px 17px;
+        font-size: 25px;
+    }
+    .payment-system-list li {
+        margin-right: 15px;
+    }
+    .check-box-title.payment-sys h3 {
+        font-size: 18px;
+    }
+    .return-to-cart {
+        bottom: -31px;
+    }
+    input[type="submit"],
+    button[type="submit"] {
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+    .info-form input[type="submit"] {
+        margin: 30px 0;
+    }
+    .item-name-list-bar.ordering-tab-title {
+        margin-top: 25px;
+    }
+    .snigle-header-top-block button[type="submit"] {
+        right: -5px;
+        top: -5px;
+    }
+    .left-menu-fixed-trigger {
+	    left: -78px;
+    }
+    
+}
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .header-silder-area, .single-slide, .slider-content, .slider-content img {
+        height: auto;
+    }
+    #marine {
+        padding-top: 65px;
+    }
+    .single-slide .col-md-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .item-block-title {
+        padding: 40px 0;
+    }
+    .header-top-area {
+        text-align: center;
+    }
+    .logo img {
+        width: 170px;
+        margin-bottom: 20px;
+    }
+    .snigle-header-top-block button[type="submit"] {
+        top: -8px;
+    }
+    .cart-number {
+        top: 0px;
+        left: 0;
+        right: 70px;
+        margin: auto;
+    }
+    .snigle-header-top-block button[type="submit"] {
+        right: 8px;
+    }
+    .pizza-nav-menu .navbar-collapse {
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        background: #252525;
+    }
+    .navbar-header {
+        background: transparent;
+    }
+    .pizza-nav-menu .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: transparent;
+    }
+    .pizza-nav-menu .navbar-nav {
+        padding: 5px 15px;
+        width: 270px;
+    }
+    .pizza-nav-menu .navbar-default li {
+        padding: 5px 25px;
+        width: 270px;
+    }
+    .pizza-nav-menu .navbar-default li:first-child {
+        padding-left: 25px;
+    }
+    .pizza-nav-menu .navbar-default li a {
+        font-size: 15px;
+        padding: 10px 12px;
+    }
+    .pizza-leftside-fixed-menu {
+        width: 250px;
+    }
+    .left-menu-close-trigger {
+        width: 50px;
+        height: 50px;
+    }
+    .pizza-leftside-red-area {
+        width: 190px;
+        height: 140px;
+    }
+        .single-slide h1 {
+        font-size: 30px;
+        margin: 0 0 18px;
+    }
+    .single-slide h2 {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .slider-meta-left {
+        width: 100%;
+        float: none;
+        font-size: 110px;
+        line-height: 101px;
+        text-align: center;
+    }
+    .slider-meta-right {
+        width: 100%;
+        float: none;
+        font-size: 20px;
+        text-align: left;
+        padding: 5px 25px;
+    }
+    .slider-content-meta {
+        margin-top: 40px;
+    }
+    .left-menu-trigger i.fa {
+        margin-right: -41px;
+    }
+    .header-silder-area .owl-controls .owl-nav div {
+        width: 30px;
+        height: 30px;
+        left: 30%;
+        top: auto;
+        border: 1px solid #FD0F1F;
+        line-height: 30px;
+        font-size: 18px;
+        bottom: -40px;
+    }
+    .header-silder-area .owl-controls .owl-nav .owl-next {
+        left: auto;
+        right: 30%;
+    }
+    .snigle-header-top-block {
+        margin-top: 10px;
+    }
+    .single-footer-wid {
+        padding-bottom: 20px;
+    }
+    .single-footer-wid img {
+        width: 180px;
+    }
+    .footer-social-icon img {
+        width: 60px;
+    }
+    .item-block-title h1 {
+        font-size: 20px;
+    }
+    .pizza-item-modal-window .modal-dialog {
+        width: 95% !important;
+    }
+    .pizza-modal-header {
+        margin-left: 0;
+    }
+    .pizza-modal-header h1 {
+        font-size: 25px;
+    }
+    .pizza-modal-left {
+        width: 100%;
+        float: none;
+    }
+    .pizza-modal-right {
+        width: 100%;
+        float: none;
+        margin-top: 35px;
+    }
+    .single-item-block.pizza-modal-right-content p {
+        text-align: center;
+    }
+    .single-item-block.pizza-modal-right-content {
+        margin-left: -10px;
+        margin-right: -10px;
+        padding: 0;
+    }
+    .single-item-block.pizza-modal-right-content h1 {
+        height: 51px;
+        width: 250px;
+        padding: 14px;
+        font-size: 22px;
+    }
+    .pizza-modal-footer a {
+        font-size: 18px;
+        padding: 15px 15px;
+        margin-bottom: 15px;
+    }
+    .single-item-block.pizza-modal-right-content span {
+        font-size: 18px;
+    }
+    .pizza-modal-footer {
+        text-align: center;
+        padding: 0;
+    }
+    .window-modal-main-area {
+        padding: 5px;
+    }
+    .pizza-modal-left .checkbox-label {
+        left: -15px;
+    }
+    .pizza-modal-left .checkbox-area {
+        padding-left: 21px;
+    }
+    .single-block-su-select h4 {
+	    padding-left: 25px;
+    }
+    .left-menu-fixed-trigger {
+	    left: -82px;
+    }
+    .check-box-title.left-bottom-title {
+        padding-left: 25px;
+        margin-bottom: 30px;
+    }
+    .footer-button {
+        margin-top: 40px;
+    }
+    .left-menu-trigger-area {
+        width: 242px;
+    }
+    /* Tab page CSS */
+    
+    .checkout-page-tab-nav .nav-tabs li a::before,
+    .checkout-page-tab-nav .nav-tabs li.active a::before,
+    .checkout-page-tab-nav .nav-tabs li.active a::after,
+    .checkout-page-tab-nav .nav-tabs li::before,
+    .checkout-page-tab-nav .nav-tabs li::after {
+        content: none;
+    }
+    .checkout-page-tab-nav .nav-tabs li:first-child a {
+        border-left: 1px solid transparent;
+    }
+    .checkout-page-tab-nav .nav-tabs li:last-child a {
+        border-right: 1px solid transparent;
+    }
+    .checkout-page-tab-nav .nav-tabs li a {
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+    }
+    .checkout-page-tab-nav .nav-tabs li a {
+        padding: 19px 30px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .tab-pizza-img {
+        width: 100px;
+        margin-bottom: 5px;
+    }
+    .item-name-list-bar h3,
+    .item-display-table h3 {
+        font-size: 18px;
+    }
+    .tab-item-meta h4 {
+        font-size: 15px;
+    }
+    .pizza-jq-input .btn {
+        padding: 3px 6px;
+        border: 1px solid transparent;
+        color: #fff;
+    }
+    .single-block-su-select {
+        width: 100%;
+    }
+    .check-box-title.delivery-order-page,
+    .equipment-order-contnet p {
+        line-height: 30px;
+        font-size: 14px;
+    }
+    .item-name-list-bar {
+        background: transparent;
+    }
+    .item-name-list-bar.color-red h3 {
+        background: #da3737;
+        margin-bottom: 5px;
+    }
+    .select-item-list.ordering-tab-item-list .single-item-list-block,
+    .single-item-list-block {
+        height: auto;
+        text-align: center;
+    }
+    .order-beverages-silder .owl-nav div {
+        font-size: 34px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        position: absolute;
+        left: 0;
+        top: auto;
+        bottom: -35px
+    }
+    .order-beverages-silder .owl-nav .owl-next {
+        left: auto;
+        right: 0;
+    }
+    .sauces-order-area {
+        font-size: 14px;
+        line-height: 30px;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .delivery-order-contnet .check-box-title {
+        height: 73px;
+    }
+    .order-continue-btn a {
+        font-size: 18px;
+    }
+    .text-right .total-checkout-btn {
+        text-align: center;
+    }
+    .total-checkout-btn h1 {
+        margin: 0 0 36px;
+        font-size: 20px;
+    }
+    .total-checkout-btn a {
+        font-size: 20px;
+        padding: 18px 18px;
+    }
+    .extra-icon img {
+        position: relative;
+        top: 10px;
+        left: 0;
+        margin-bottom: 15px;
+    }
+    .handle-counter .counter-minus,
+    .handle-counter .counter-plus,
+    .handle-counter input {
+        float: none;
+        text-align: center;
+    }
+    .select-item-list.ordering-tab-item-list .item-display-table,
+    .item-display-table {
+        height: 100px;
+        width: 100%;
+    }
+    .pizza-jq-input.order-bever-quantity .btn {
+        padding: 4px 4px;
+    }
+    .single-item-list-block:first-child {
+        margin-top: 40px;
+    }
+    .item-name-list-bar.sauces-title-order {
+        margin-top: 90px;
+    }
+    .order-continue-btn {
+        padding: 40px 0;
+        text-align: center;
+    }
+    .total-order-amount h2 {
+        text-align: left;
+        padding: 15px 0;
+        font-size: 16px;
+    }
+    .payment-system-list li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .payment-system-list li img {
+        margin-top: 10px;
+    }
+    .check-box-title.payment-sys h3 {
+        font-size: 18px;
+    }
+    .info-form {
+        padding: 0;
+    }
+    .info-form span {
+        left: 0px;
+        font-size: 18px;
+    }
+    .info-form input[type="text"],
+    .info-form input[type="tel"],
+    textarea {
+        margin-bottom: 15px;
+    }
+    .info-form input[type="submit"] {
+        float: right;
+        margin: 20px 0;
+        float: none;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    input[type="submit"],
+    button[type="submit"] {
+        background: #fd0f1f;
+        border: none;
+        font-size: 18px;
+        display: inline-block;
+        padding: 15px 15px;
+    }
+    .return-to-cart {
+        font-size: 15px;
+        bottom: 15px;
+    }
+    .your-order h3 {
+        padding: 20px 20px;
+        font-size: 18px;
+    }
+    .item-name-list-bar.ordering-tab-title {
+        margin-top: 15px;
+    }
+    .order-accept-content {
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 5px;
+    }
+    .order-accept-content h1 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .order-accept-content input[type="checkbox"] {
+        position: absolute;
+        left: -15px;
+        top: -4px;
+    }
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 30px;
+        right: 4px;
+        bottom: 50px;
+    }
+    .pizza-page-content-area {
+        padding: 20px 5px;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

@@ -1,0 +1,1566 @@
+/*
+Template Name: Pizza HTML5 Template
+Developer Name: Shakib Hassan
+
+=====================================
+TABLE CONTENT
+=====================================
+
+1. Base CSS
+2. Common CSS
+3. Left Side Menu CSS
+4. Header Top CSS
+5. Nav Menu CSS
+6. Header Slider CSS
+7. Item Title CSS
+8. Single item block CSS
+9. Marine Item Blcok CSS
+10. Red Rebon CSS
+11. Golden Rebon CSS
+12. Deep Red Rebon CSS
+13. Green Rebon CSS
+14. Smoked Sausage Rebon CSS
+16. Crown Beef Rebon CSS
+17. Meat Omelette Rebon CSS
+18. BBQ Rebon CSS
+19. Beverages Rebon CSS
+20. Back To Top CSS
+21. Modal window CSS
+22. Footer Area CSS
+23. Order page CSS
+24. Checkout Page body
+25. Beverage Slider CSS
+26. Ordering Tab CSS
+27. Order Accept Tab
+28. Payment form CSS
+29. Jquery Input CSS
+30. Other Pages CSS
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Lobster');
+/* 1. Base CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus {
+    outline: 0 solid
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Fira Sans', sans-serif;
+    background-image: url(../img/body-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+a:hover {
+    text-decoration: none
+}
+/* 2. common CSS */
+
+input[type="text"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    border: none;
+    color: #515151;
+    padding: 20px;
+    border: 1px solid #fff;
+    background: #252525;
+}
+input[type=submit],
+button[type=submit] {
+    background: #fd0f1f;
+    border: none;
+    font-size: 30px;
+    display: inline-block;
+    padding: 26px 34px;
+}
+.checkout-page-tab-nav, .sauces-order-area, .equipment-order-contnet {
+	margin-left: -15px;
+	margin-right: -13px;
+}
+.order-item-block {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.body-dark-overlay {
+    position: fixed;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    opacity: 1;
+    visibility: hidden;
+    -webkit-transition: .2;
+    -o-transition: .2;
+    transition: .2;
+}
+.body-dark-overlay.active {
+    opacity: .5;
+    visibility: visible;
+}
+/* 3. Left Side Menu CSS */
+
+.pizza-leftside-fixed-menu {
+	width: 300px;
+	position: fixed;
+	left: -360px;
+	top: 25px;
+	z-index: 99;
+	-webkit-transition: .8;
+	-o-transition: .8;
+	transition: .8;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 93%;
+}
+.pizza-leftside-fixed-menu.active {
+    left: 0;
+}
+.pizza-leftside-fixed-menu.navbar-inverse {
+	background-color: transparent;
+	border-color: none;
+}
+.pizza-leftside-red-area {
+    background: #fd0f1f;
+    width: 225px;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+}
+.left-menu-trigger.active i.fa {
+    -webkit-animation: none;
+    animation: none;
+    margin-right: 0;
+}
+.left-menu-trigger:hover {
+    color: #fff;
+}
+
+.animaion-icon i.fa {
+    -webkit-animation-name: wiggle;
+    animation-name: wiggle;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes wiggle {
+    0% {
+        margin-right: 0px;
+    }
+    50% {
+        margin-right: -10px;
+    }
+    100% {
+        margin-right: 0px;
+    }
+}
+@keyframes wiggle {
+    0% {
+        margin-right: 0px;
+    }
+    50% {
+        margin-right: -10px;
+    }
+    100% {
+        margin-right: 0px;
+    }
+}
+
+.left-menu-close-trigger i.fa {
+    -webkit-animation-name: wiggle2;
+    animation-name: wiggle2;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    padding-top: 20px;
+}
+@-webkit-keyframes wiggle2 {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: -10px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+@keyframes wiggle2 {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: -10px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+.left-menu-trigger {
+	background: #fd0f1f;
+	width: 246px;
+	height: 60px;
+	font-size: 16px;
+	text-align: center;
+	float: right;
+	margin-top: 0;
+	color: #fff;
+	cursor: pointer;
+	line-height: 60px;
+	padding-right: 6px;
+	margin-right: 0;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	position: fixed;
+	right: 5px;
+	bottom: 0;
+	left: 0;
+	top: 20px;
+	z-index: 9;
+	display: none;
+}
+.left-menu-trigger ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+	position: relative;
+	padding-left: 5px;
+}
+.left-menu-trigger li img {
+  width: 40px;
+  margin-right: 7px;
+}
+.animaion-icon {
+	font-size: 35px;
+	position: absolute;
+	right: 0;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	background: #D60815;
+	top: 3px;
+	bottom: 3px;
+}
+.left-menu-trigger li {
+  display: inline-block;
+}
+.left-menu-trigger.active{
+    visibility: hidden;
+    opacity: 0;
+}
+.left-menu-close-trigger {
+	color: #fff;
+	right: 3px;
+	position: absolute;
+	display: block;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	opacity: 0;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	-webkit-transition: .1s;
+	-o-transition: .1s;
+	transition: .1s;
+	z-index: 9;
+	background: #d50714;
+	top: 3px;
+	font-size: 35px;
+}
+.left-menu-close-trigger.active {
+    opacity: 1;
+    z-index: 9;
+}
+.left-menu-close-trigger:hover{
+    color: #fff;
+}
+.left-menu-trigger.active > i.fa-angle-right {
+    opacity: 0;
+    display: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.pizza-leftside-fixed-menu i.fa.active {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.pizza-leftside-fixed-menu i.fa:hover {
+    opacity: .85;
+}
+.left-fixed-menu img {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.left-fixed-menu li a {
+	color: #fff;
+	line-height: 25px;
+	display: block;
+	padding-left: 32px;
+	font-size: 17px;
+}
+.left-fixed-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #fd0f1f;
+	margin-top: 65px;
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	padding-bottom: 0;
+	background-image: url(../img/left-menu-bg.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.left-fixed-menu li {
+    display: block;
+    border-bottom: 1px solid #fd0f1f;
+    padding: 15px 5px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    position: relative;
+}
+.left-fixed-menu li:last-child{
+    border-bottom: 0px;
+}
+.left-fixed-menu li:hover {
+    background: #fd0f1f;
+}
+.left-menu-trigger-area img {
+  width: 30px;
+  margin-right: 11px;
+}
+.left-menu-trigger-area {
+	background: #fd0f1f;
+	padding: 15px 5px;
+	position: fixed;
+	width: 292px;
+	z-index: 9;
+	top: 25px;
+	left: 0;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    visibility: hidden;
+    opacity: 0;
+}
+.left-menu-trigger-area.active{
+    opacity: 1;
+    visibility: visible;
+}
+.left-menu-trigger-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.left-menu-trigger-area li {
+  display: inline-block;
+    font-size: 17px;
+}
+/* scroll bar customize*/
+
+.scroll-bar-custom::-webkit-scrollbar{
+    width: 8px;
+}
+.scroll-bar-custom::-webkit-scrollbar-thumb{
+    background: #252525;
+    outline: 0;
+    border-radius: 50px;
+}
+
+/* 4. Header Top CSS */
+
+.header-top-area {
+    margin-top: 25px;
+}
+.snigle-header-top-block .header-top-bold-text {
+    font-weight: 600;
+    font-size: 15px;
+}
+.snigle-header-top-block {
+    margin-bottom: 25px;
+}
+.snigle-header-top-block span {
+    color: ;
+    color: #e7cc63;
+}
+.phone-number a {
+    color: #e7cc63;
+}
+.phone-number i.fa {
+    font-size: 18px;
+    margin-right: 5px;
+}
+.snigle-header-top-block input[type="search"] {
+    width: 100%;
+    border: none;
+    padding: 6px;
+    position: relative;
+    color: #000;
+}
+.snigle-header-top-block button[type="submit"] {
+    background: none;
+    border: none;
+    position: absolute;
+    right: -12px;
+    color: #000;
+    font-size: 18px;
+    height: 20px;
+    margin: auto;
+    top: -13px;
+    bottom: 0;
+}
+.snigle-header-top-block p {
+    font-size: 12px;
+}
+.cart-icon {
+    width: 28px;
+    margin-right: 15px;
+    position: relative;
+}
+.cart-number {
+    width: 20px;
+    height: 20px;
+    color: #fff !important;
+    background: #fd0f1f;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -6px;
+    left: 32px;
+}
+.social-icon img {
+    width: 60px;
+}
+/* 5. Nav Menu CSS */
+
+.pizza-nav-menu .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 10px;
+}
+.pizza-nav-menu .navbar-default li{
+    padding: 5px 39px;
+}
+.pizza-nav-menu div#bs-example-navbar-collapse-1 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.pizza-nav-menu .navbar-default li a {
+    color: #fff;
+    font-size: 18px;
+}
+.pizza-nav-menu .navbar-default li:last-child {
+    padding-right: 0;
+}
+
+.pizza-nav-menu .navbar-default li:first-child {
+    padding-left: 0;
+}
+.pizza-nav-menu .navbar-default li a:first-child {
+    padding-left: 0;
+}
+.pizza-nav-menu .navbar-default li a:hover {
+    color: #e7cc63;
+}
+.pizza-nav-menu .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+/* 6. Header Slider CSS */
+
+.header-silder-area,
+.single-slide, .slider-content img{
+    height: auto;
+}
+.single-slide {
+    position: relative;
+    z-index: 1;
+}
+.single-slide:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #252525;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+.slider-content {
+    height: 540px;
+    width: 100%;
+    display: table;
+}
+.slider-content-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+} 
+.single-slide h1 {
+    font-size: 90px;
+    font-family: 'Lobster', cursive;
+    margin: 0 0 45px;
+    text-align: center;
+}
+.single-slide h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-left: 60px;
+}
+.slider-meta-left {
+    width: 46%;
+    float: left;
+    font-size: 160px;
+    line-height: 160px;
+    text-align: right;
+}
+.slider-meta-right {
+    width: 50%;
+    float: right;
+    font-size: 30px;
+    text-align: left;
+}
+.slider-meta-right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slider-meta-right ul li {
+    position: relative;
+    margin: 15px 0;
+}
+.slider-meta-right ul li:before {
+    position: absolute;
+    left: -12px;
+    top: 0;
+    content: "";
+    background: #c30174;
+    width: 7px;
+    height: 100%;
+}
+.slider-meta-right ul li:nth-child(2):before {
+    background: #009b90;
+}
+.slider-meta-right ul li:nth-child(3):before {
+    background: #794d82;
+}
+.slider-content-meta {
+    margin-top: 80px;
+}
+.header-silder-area {
+    position: relative;
+}
+.header-silder-area .owl-controls .owl-nav div {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.header-silder-area .owl-controls .owl-nav .owl-next {
+    left: auto;
+    right: 50px;
+}
+/* 7. Item Title CSS */
+
+.item-block-title {
+    padding: 55px 0;
+}
+.item-block-title h1 {
+    font-style: italic;
+    position: relative;
+    padding-left: 65px;
+    margin: 0;
+}
+.item-block-title img {
+    position: absolute;
+    bottom: 8px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+/* 8. Single item block CSS */
+
+.single-item-block {
+    text-align: center;
+    background: #252525;
+    border: 1px solid #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.single-item-block h4 {
+    background-image: url(../img/blue-rebon.png);
+    background-repeat: no-repeat;
+    height: 40px;
+    margin: 0 0 13px;
+    padding: 11px;
+    font-family: 'Lobster', cursive;
+    background-size: contain;
+    background-position: center;
+}
+.single-item-block p {
+    text-align: left;
+}
+.single-block-botton {
+    padding: 0;
+    list-style: none;
+}
+.single-block-botton li {
+    display: inline-block;
+    background: #21867e;
+    padding: 4px 6px;
+    margin: 7px;
+}
+.single-block-botton li a {
+    color: #fff;
+    padding: 2px 5px;
+    display: block;
+    border: 1px dashed #fff;
+}
+.single-item-block-img img {
+    width: 180px;
+    margin: 5px 0;
+    height: 160px;
+}
+.single-item-block span {
+    margin-bottom: 15px;
+    display: block;
+}
+/* 9. Marine Item Blcok CSS */
+
+#marine {
+    position: relative;
+}
+/* 10. Red Rebon CSS */
+
+.single-item-block.meat-with-pepperoni h4 {
+    background-image: url(../img/red-rebon.png);
+}
+.single-block-botton.red-rebon-botton li {
+    background: #da3737;
+}
+/* 11. Golden Rebon CSS */
+
+.single-item-block.creamy-section h4 {
+    background-image: url(../img/golden-rebon.png);
+}
+.single-block-botton.gold-rebon-botton li {
+    background: #908443;
+}
+/* 12. Deep Red Rebon CSS */
+
+.single-item-block.other-meats-section h4 {
+    background-image: url(../img/deep-red-rebon.png);
+}
+.single-block-botton.deep-red-rebon-botton li {
+    background: #851813;
+}
+/* 13. Green Rebon CSS */
+
+.single-item-block.four-flavor-section h4 {
+    background-image: url(../img/green-rebon.png);
+}
+.single-block-botton.green-rebon-botton li {
+    background: #326a1b;
+}
+/* 14. Smoked Sausage Rebon CSS */
+
+.single-item-block.smoked-sausage-section h4 {
+    background-image: url(../img/maroon-rebon.png);
+}
+.single-block-botton.maroon-rebon-botton li {
+    background: #672421;
+}
+/* 15. Crown Beef Rebon CSS */
+
+.single-item-block.crown-beef-section h4 {
+    background-image: url(../img/crow-beef-rebon.png);
+}
+.single-block-botton.crown-beef-rebon-botton li {
+    background: #663413;
+}
+/* 16. Crown Beef Rebon CSS */
+
+.single-item-block.forcemeat-bolognese-section h4 {
+    background-image: url(../img/red-rebon.png);
+}
+/* 17. Meat Omelette Rebon CSS */
+
+.single-item-block.meat-omelette-section h4 {
+    background-image: url(../img/yellowgreen-rebon.png);
+}
+.single-block-botton.yellowgreen-rebon-botton li {
+    background: #8f9227;
+}
+/* 18. BBQ Rebon CSS */
+
+.single-item-block.barbecue-section h4 {
+    background-image: url(../img/grey-rebon.png);
+}
+.single-block-botton.grey-rebon-botton li {
+    background: #757272;
+}
+/* 19. Beverages Rebon CSS */
+
+.single-item-block.beverages-section h4 {
+    background-image: url(../img/lightblue-rebon.png);
+}
+.single-block-botton.lightblue-rebon-botton li {
+    background: #11678b;
+}
+/* 20. Back To Top CSS */
+
+.back-to-top {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background: #FD0F1F;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #fff;
+    position: fixed;
+    right: 27px;
+    z-index: 9;
+    bottom: 100px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    display: none;
+}
+.back-to-top:hover {
+    -webkit-box-shadow: 0 0 3px #f5f5f5;
+    box-shadow: 0 0 3px #f5f5f5;
+    color: #fff;
+}
+/* 21. Modal window CSS */
+
+.window-modal-main-area {
+    padding: 20px;
+}
+.window-modal-main-area p {
+	font-size: 12px;
+	font-weight: 200;
+	line-height: 15px;
+}
+.pizza-item-modal-window .modal-dialog {
+	width: 740px;
+}
+.single-item-block.pizza-modal-right-content {
+	background: transparent;
+	border: 0px;
+	padding-right: 0;
+	padding-left: 0;
+	margin-bottom: 50px;
+}
+.pizza-item-modal-window .modal-footer {
+    border-top: 0px solid !important;
+}
+.pizza-item-modal-window .modal-header {
+    border-bottom: 0px solid !important;
+}
+.pizza-modal-left {
+    width: 47%;
+    float: left;
+}
+.pizza-modal-right {
+    width: 47%;
+    float: right;
+    text-align: center;
+}
+.pizza-modal-right-img img {
+	padding: 0;
+	width: 237px;
+	margin-top: -16px;
+}
+.pizza-item-modal-window .modal-content {
+    background: #252525;
+    border-radius: 0px;
+    border: 1px solid #fff;
+}
+.check-box-title-left {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.check-box-title-left img {
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    left: 0px;
+    top: -14px;
+    bottom: 0;
+    margin: auto;
+}
+.check-box-title-left h4 {
+    padding-left: 33px;
+}
+.check-box-title-right {
+    float: right;
+    width: 50%;
+}
+.check-box-title-right h4 {
+    text-align: right;
+}
+.single-item-block.pizza-modal-right-content h1 {
+	height: 53px;
+	width: 300px;
+	background-image: url(../img/modal-win-rebon.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: 'Lobster', cursive;
+	background-size: contain;
+	padding: 11px;
+	font-size: 28px;
+	margin: auto;
+}
+.single-item-block.pizza-modal-right-content span {
+	font-size: 18px;
+}
+.check-box-title {
+	border: 1px solid #fff;
+	height: 30px;
+	padding: 6px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.check-box-title h4 {
+	font-size: 14px;
+	font-weight: normal;
+}
+.single-item-block.pizza-modal-right-content p {
+	text-align: left;
+}
+.pizza-item-modal-window .modal-header .close {
+    margin-top: -2px;
+    color: #DD1320;
+    opacity: 1;
+    font-weight: 400;
+}
+.pizza-modal-header {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.pizza-modal-header h1 {
+	margin: 0 0 5px;
+	font-weight: 600;
+	font-size: 28px;
+}
+.pizza-modal-header p {
+	font-size: 14px;
+	line-height: 22px;
+	font-style: italic;
+}
+.checkbox-label {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    position: relative;
+}
+.checkbox-label:before {
+    content: "";
+    background: #da3737;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    opacity: 0;
+    left: 0;
+}
+.check-box-title.left-bottom-title {
+	border: 0px;
+	margin-left: -40px;
+}
+.check-box-title.left-bottom-title span {
+    color: #35aba2;
+}
+.my-check-box {
+    display: none;
+}
+.my-check-box:checked + .checkbox-label:before {
+    opacity: 1;
+    left: 0;
+}
+.custom-check-box {
+	position: absolute;
+	left: 0px;
+	top: 8px;
+	width: 15px;
+	height: 15px;
+	z-index: 2;
+}
+.checkbox-area {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+.pizza-win-checkbox-left-bottom .checkbox-area {
+	padding-left: 7px;
+	margin-bottom: 0px;
+}
+.checkbox-area.checkbox-left-bottom {
+	margin-bottom: -15px;
+	padding-left: 0;
+}
+.pizza-win-checkbox-left-bottom h3 {
+    margin-left: 38px;
+}
+.pizza-modal-footer {
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding: 30px 0;
+}
+.footer-button {
+	color: #fff;
+	font-size: 18px;
+	display: inline-block;
+	padding: 11px 24px;
+	background: #fd0f1f;
+	margin-top: 35px;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+.footer-button:hover{
+    color: #fff;
+    opacity: .85;
+}
+.price-text {
+	color: #fff;
+	font-size: 24px !important;
+	display: block;
+	text-align: center;
+	padding: 30px;
+}
+.pizza-modal-footer a:hover {
+    color: #fff;
+}
+/* 22. Footer Area CSS */
+
+#footer-area {
+    background: #252525;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+.single-footer-wid,
+.single-footer-wid a {
+    color: #929292;
+    font-size: 18px;
+    line-height: 22px;
+}
+.single-footer-wid ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.time-info {
+    font-size: 12px;
+}
+.time-info span {
+    color: #867944;
+}
+.phone-number a {
+    color: #9b8948;
+    font-size: 16px;
+}
+.copy-text {
+    color: #929292;
+    margin: 50px 0;
+}
+/* 23. Order page CSS */
+
+.checkout-page-tab-nav .nav-tabs {
+    border-bottom: 0px;
+}
+.checkout-page-tab-nav .nav-tabs li {
+    border-right: 1px solid transparent;
+}
+.checkout-page-tab-nav .nav-tabs li:last-child {
+    border-right: 0px solid transparent;
+}
+.checkout-page-tab-nav .nav-tabs li:first-child a {
+    border-left: 1px solid #ddd;
+}
+.checkout-page-tab-nav .nav-tabs li a {
+    color: #fff;
+    background: #252525;
+    border-radius: 0;
+    font-size: 24px;
+    margin-right: -1px;
+    padding: 15px 30px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.checkout-page-tab-nav .nav-tabs li:first-child a {
+    border-radius: 0px 0 0 0px;
+    border-left: 1px solid #fff;
+}
+.checkout-page-tab-nav .nav-tabs li:last-child a {
+    border-radius: 0 0px 0px 0;
+    border-right: 1px solid #fff;
+}
+.checkout-page-tab-nav .nav-tabs li a:hover {
+    background: #252525;
+}
+.checkout-page-tab-nav .nav-tabs li a:hover:before {
+    border-left: 15px solid #252525;
+}
+.checkout-page-tab-nav .nav-tabs li.active a::after,
+.checkout-page-tab-nav .nav-tabs li a::after {
+    content: "";
+    border-left: 17px solid #518b39;
+    border-top: 32px solid transparent;
+    border-bottom: 36px solid transparent;
+    position: absolute;
+    top: -2px;
+    right: -17px;
+    z-index: 1;
+}
+.checkout-page-tab-nav .nav-tabs li a:after {
+    border-left: 17px solid transparent;
+}
+.checkout-page-tab-nav .nav-tabs li.active a:before {
+    border-left: 17px solid #518b39;
+}
+.checkout-page-tab-nav .nav-tabs li a::before {
+    border-bottom: 32px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid #252525;
+    border-top: 34px solid rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: -2px;
+    z-index: 2;
+}
+.checkout-page-tab-nav .nav-tabs li.active > a,
+.checkout-page-tab-nav .nav-tabs > li.active > a:focus,
+.checkout-page-tab-nav .nav-tabs > li.active > a:hover {
+    border: none;
+    color: #fff;
+    background: #518b39;
+    border-top: 1px solid #518b39;
+    border-bottom: 1px solid #518b39;
+}
+.checkout-page-tab-nav .nav-tabs li:last-child.active a:after,
+.checkout-page-tab-nav .nav-tabs li:last-child a:after {
+    border: none;
+}
+.checkout-page-tab-nav .nav-tabs li:last-child a:after,
+.checkout-page-tab-nav .nav-tabs li:last-child a:hover:before,
+.checkout-page-tab-nav .nav-tabs li:last-child.active a:before,
+.checkout-page-tab-nav .nav-tabs li:last-child a:before {
+    border-left: none;
+}
+.checkout-page-tab-nav .nav-tabs li:after {
+    position: absolute;
+    right: -10px;
+    top: -2px;
+    height: 55%;
+    background: #fff;
+    content: "";
+    -webkit-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    border-left: 1px solid #fff;
+    z-index: 9;
+}
+.checkout-page-tab-nav .nav-tabs li:last-child:before,
+.checkout-page-tab-nav .nav-tabs li:last-child:after {
+    content: none;
+}
+.checkout-page-tab-nav .nav-tabs li::before {
+    position: absolute;
+    right: -11px;
+    bottom: -1px;
+    height: 58%;
+    background: #fff;
+    border-left: 1px solid #fff;
+    z-index: 9;
+    content: "";
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+}
+.checkout-page-tab-nav .nav-tabs > li > a {
+    border-right: 0px solid transparent;
+    border-left: 0px solid transparent;
+}
+/* 24. Checkout Page body */
+
+.item-name-list-bar {
+    height: 55px;
+    background: #da3737;
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+.item-name-list-bar h3 {
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+}
+.single-item-list-block {
+    background: #252525;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #707070;
+    height: 174px;
+    overflow: hidden;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.tab-pizza-img {
+    width: 110px;
+}
+.tab-item-meta span {
+    display: block;
+    font-weight: normal;
+}
+.tab-item-img {
+    position: relative;
+}
+.extra-icon img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    margin: auto;
+    left: 120px;
+}
+.sp-quantity input[type="text"] {
+    width: 30px;
+    color: #fff;
+    padding: 5px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #252525;
+}
+.item-display-table {
+    height: 152px;
+    display: table;
+    text-align: center;
+}
+.item-display-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.item-display-table span {
+    display: block;
+    margin-top: 15px;
+}
+.item-display-table h3 {
+    font-weight: 400;
+}
+.sp-quantity div {
+    display: inline;
+}
+.sp-plus .item-quantity {
+    color: #AF3232;
+}
+.item-quantity {
+    font-size: 25px;
+    color: #fff;
+    margin: 0 5px;
+    display: inline-block;
+}
+.item-name-list-bar.beverages-title-order h3,
+.item-name-list-bar.beverages-title-order h3,
+.item-name-list-bar.sauces-title-order h3,
+.item-name-list-bar.equipment-title-order h3,
+.item-name-list-bar.delivery-title-order h3 {
+    text-align: left;
+}
+.item-name-list-bar.beverages-title-order {
+    background: #35aba2;
+}
+.item-name-list-bar.sauces-title-order {
+    background: #8f8444;
+}
+.item-name-list-bar.delivery-title-order,
+.item-name-list-bar.equipment-title-order {
+    background: #4c4b4b;
+}
+/* Beverage Slider CSS */
+
+.single-order-bever-silde {
+    background: #252525;
+    border: 1px solid #707070;
+    padding: 10px 18px;
+}
+.sp-quantity.order-bever-quantity input[type="text"] {
+    width: 25px;
+    height: 25px;
+}
+.order-beverages-silder .owl-nav div {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    left: -70px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: .7;
+}
+.order-beverages-silder {
+    position: relative;
+}
+.order-beverages-silder .owl-nav .owl-next {
+    left: auto;
+    right: -70px;
+}
+/* 25. Beverage Slider CSS */
+
+.sauces-order-area {
+    font-size: 18px;
+    line-height: 36px;
+}
+.sauces-order-area span {
+    color: #e82f34;
+    font-weight: 700;
+}
+.single-block-su-select {
+    background: #252525;
+    width: 18.94%;
+    border: 1px solid #595959;
+    padding: 20px;
+    text-align: center;
+    margin: 15px;
+    margin-left: 0;
+    float: left;
+    min-height: 160px;
+}
+.single-block-su-select:last-child {
+    margin-right: 0;
+}
+.single-block-su-select h4 {
+    font-weight: normal;
+    position: relative;
+    padding-left: 15px;
+    margin: 0 0 30px;
+}
+.single-block-su-select img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+    margin: auto;
+}
+.sauces-select-block {
+    margin-top: 20px;
+}
+.equipment-order-contnet p {
+    font-size: 18px;
+}
+.order-equipment-quantity {
+    background: #252525;
+    display: inline-block;
+    border: 1px solid #595959;
+    padding: 8px 0;
+    margin-top: 20px;
+}
+.check-box-title.delivery-order-page {
+    border: 0px;
+    font-size: 18px;
+}
+.delivery-order-contnet {
+    margin-left: -15px;
+}
+.checkout-order-area {
+    padding: 100px 0;
+}
+.order-continue-btn a {
+    color: #fff;
+    font-size: 24px;
+}
+.order-continue-btn i.fa {
+    margin-right: 5px;
+}
+.total-checkout-btn a {
+    color: #fff;
+    background: #fd0f1f;
+    font-size: 30px;
+    padding: 20px 25px;
+    display: inline-block;
+}
+.total-checkout-btn h1 {
+    margin: 0 0 36px;
+}
+.order-continue-btn {
+    padding: 55px 0;
+}
+/* 26. Ordering Tab CSS */
+
+.item-name-list-bar.ordering-tab-title {
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.your-order h3 {
+    padding: 20px 40px;
+}
+.ordering-tab-main-body {
+    background: #252525;
+    border: 1px solid #ffff;
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+.item-name-list-bar.ordering-tab-title {} .select-item-list.ordering-tab-item-list {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.select-item-list.ordering-tab-item-list .single-item-list-block {
+    height: 120px;
+}
+.select-item-list.ordering-tab-item-list .item-display-table {
+    height: 120px;
+    width: 100%
+}
+.ordering-tab-item-img img {
+    width: 30px;
+}
+.total-order-amount h2 {
+    font-weight: normal;
+    text-align: right;
+    padding: 15px 90px;
+}
+/* 27. Order Accept Tab */
+
+.order-accept-tab-area {
+    background-image: url(../img/order-accept-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding-top: 60px;
+}
+.order-accept-tab-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #000;
+    z-index: -1;
+    opacity: .5;
+}
+.order-accept-content {
+    font-size: 25px;
+    line-height: 36px;
+    position: relative;
+}
+.order-accept-content input[type=checkbox] {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+.order-accept-content h1 {
+    margin-top: 35px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+}
+/* 28. Payment form CSS */
+
+.info-form {
+    padding: 30px;
+}
+.info-form span {
+    color: #fd0f1f;
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    font-size: 22px;
+}
+.info-form input[type="text"],
+.info-form input[type="tel"],
+textarea {
+    position: relative;
+    margin-bottom: 30px;
+}
+.info-form textarea {
+    height: 200px;
+}
+.info-form input[type="submit"] {
+    float: right;
+    margin: 60px 0;
+}
+.return-to-cart {
+    color: #bebebe;
+    font-size: 18px;
+    position: absolute;
+    bottom: 88px;
+}
+.check-box-title.payment-sys {
+    border: none;
+}
+.payment-system-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.payment-system-list li {
+    display: inline-block;
+    margin-right: 35px;
+}
+.return-to-cart:hover {
+    color: #bebebe;
+}
+.return-to-cart i.fa {
+    margin-right: 5px;
+}
+/* 29. Jquery Input CSS */
+
+.handle-counter {
+    overflow: hidden;
+}
+.handle-counter .counter-minus,
+.handle-counter .counter-plus,
+.handle-counter input {
+    float: left;
+    text-align: center;
+}
+.handle-counter .counter-minus,
+.handle-counter .counter-plus {
+    text-align: center;
+}
+.handle-counter input {
+    width: 30px;
+    color: #fff;
+    height: 30px;
+}
+.handle-counter.pizza-jq-input.order-bever-quantity input[type="text"] {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+}
+.handle-counter input[type=text] {
+    padding: 5px;
+}
+.pizza-jq-input .btn {
+    padding: 3px 10px;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.pizza-jq-input.order-bever-quantity .btn {
+    padding: 4px 6px;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.btn:disabled,
+.btn:disabled:hover {
+    background-color: darkgrey;
+    cursor: not-allowed;
+}
+.pizza-jq-input .btn-primary {
+    background-color: transparent;
+}
+.pizza-jq-input .btn-primary:hover,
+.pizza-jq-input .btn-primary:focus {
+    background-color: none;
+}
+.pizza-jq-input .counter-plus.btn.btn-primary {
+    font-size: 20px;
+    color: #AF3232;
+    line-height: 20px;
+}
+.pizza-jq-input .counter-minus.btn.btn-primary {
+    font-size: 20px;
+    line-height: 20px;
+}
+.pizza-jq-input .btn-primary:active:focus,
+.pizza-jq-input .btn-primary:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+/* 30. Other Pages CSS */
+
+.pizza-page-content-area {
+    background: #252525;
+    border: 1px solid #fff;
+    padding: 30px;
+}
+.pizza-pages-content-title h1 {
+    margin: 50px 0;
+}
